@@ -30,12 +30,14 @@
  * ...and connect the rest of 'Pages' controller's urls.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+	Router::connect('/products/:code', array('controller' => 'products', 'action' => 'view'), array('code' => '[0-9]+'));
 
 /**
  * Load all plugin routes.  See the CakePlugin documentation on 
  * how to customize the loading of plugin routes.
  */
 	CakePlugin::routes();
+	
 
 /**
  * Load the CakePHP default routes. Only remove this if you do not want to use
