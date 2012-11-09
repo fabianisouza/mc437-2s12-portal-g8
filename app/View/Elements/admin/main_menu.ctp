@@ -1,22 +1,20 @@
 <ul class="nav main">
 	<li>
-		<a href="/admin">Admin</a>
-		<!--<ul>
-			<li>
-				<a href="/">Link 1</a>
-			</li>
-			<li>
-				<a href="/">Link 2</a>
-			</li>
-		</ul>-->	
+		<a href="/admin">Home</a>
 	</li>
 	<li>
-		<a href="/admin">Admin</a>		
+		<a href="/admin">Informatica</a>
 	</li>
 	<li>
-		<a href="/admin">Admin 2</a>		
+		<a href="/admin">Eletrodomesticos</a>		
 	</li>
 	<li>
-		<a href="/admin">Admin 3</a>		
+		<a href="/admin">Esporte & Lazer</a>		
+	</li>
+	<li>
+		<a href="/admin">Livros</a>		
+	</li>
+	<li>
+		<a href="/admin">Cama, Mesa & Banho</a>		
 	</li>
 </ul>

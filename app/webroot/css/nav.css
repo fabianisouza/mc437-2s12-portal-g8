@@ -9,9 +9,10 @@ ul.nav,
 ul.nav * { margin:0;padding:0;}
 ul.nav {
   position:relative;
-  background:#666;
+  background:#5a7597;
   max-width:100%;
   height:2.5em;
+  font-size: 1.4em;
   }
 ul.nav li {
 	cursor:pointer;
@@ -37,8 +38,8 @@ ul.nav li ul li {
 	max-width:none;
 }
 ul.nav li a {
-	color:#fff;
-	background:#666;
+	color:#eee;
+	background:#5a7597;
 	font-weight:bold;
 	text-decoration:none;
 	display:block;
@@ -83,7 +84,6 @@ ul.nav li.current:hover ul li a:active {color:#666; background:#fff;}
 /* navigation (vertical subnavigation)
 ----------------------------------------------- */
 ul.nav {
-  background:#666;
 }
 ul.main li {
   position:relative;
@@ -100,8 +100,6 @@ ul.main li a {
 	height:2.5em;
 	line-height:2.5em;
 	border:0;
-	color:#fff;
-	background:#666;
 }
 ul.main li ul li a {
   width:12em;

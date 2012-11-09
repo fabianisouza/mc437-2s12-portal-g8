@@ -20,6 +20,7 @@ if (Configure::read('debug') == 0):
 endif;
 App::uses('Debugger', 'Utility');
 ?>
+<!--
 <iframe src="http://cakephp.org/bake-banner" width="830" height="160" style="overflow:hidden; border:none;">
 	<p>For updates and important announcements, visit http://cakefest.org</p>
 </iframe>
@@ -186,3 +187,5 @@ You can also add some CSS styles for your pages at: APP/webroot/css.');
 	<li><a href="http://cakephp.lighthouseapp.com/"><?php echo __d('cake_dev', 'CakePHP Lighthouse'); ?> </a>
 	<ul><li><?php echo __d('cake_dev', 'CakePHP Tickets, Wiki pages, Roadmap'); ?></li></ul></li>
 </ul>
+-->
+<h1>Bem-Vindo!</h1>

@@ -15,117 +15,93 @@
 </head>
 <body>
 	<div class="container_16">			
-		<div class="grid_16">
-			<h1 id="branding">
-				<a href="/">Portal de Vendas</a>
-			</h1>
+		<div class="grid_16" style='background:url(http://localhost/cake/img/header.png); height:180px; margin:3; text-align:right;'>
+			<?php echo $this->element('admin/login'); ?>
+			<?php echo $this->element('admin/search'); ?>
 		</div>
 		<div class="clear"></div>
 		<div class="grid_16">
 			 <?php echo $this->element('admin/main_menu'); ?>
 		</div>
 		
-		<div class="clear" style="height: 10px; width: 100%;"></div>
-		<div class="grid_4">
-			<div class="box">
-				<h2>Lorem Ipsum</h2>
-				<div class="block">
-					<p>Sed orci enim, porttitor laoreet rhoncus ultricies, congue vel massa. In odio nibh, suscipit eu rhoncus eget, tempus sit amet leo. Sed porttitor est vitae ipsum tempor lobortis. Mauris nec nisl non tortor lacinia fringilla. Nunc tempor nibh nec enim iaculis sollicitudin. Quisque dictum porta lacus, ac suscipit nulla eleifend at. In tincidunt purus tellus. Praesent commodo, nibh et tristique facilisis, augue justo posuere lectus, nec varius dui nisi nec orci. Integer ut ullamcorper lacus. Nulla sit amet nunc mi, non varius lectus.</p>
-				</div>
-			</div>
-		</div>
-		<div class="grid_4">
-			<div class="box">
-				<h2>Lorem Ipsum</h2>
-				<div class="block">
-					<p>Sed orci enim, porttitor laoreet rhoncus ultricies, congue vel massa. In odio nibh, suscipit eu rhoncus eget, tempus sit amet leo. Sed porttitor est vitae ipsum tempor lobortis. Mauris nec nisl non tortor lacinia fringilla. Nunc tempor nibh nec enim iaculis sollicitudin. Quisque dictum porta lacus, ac suscipit nulla eleifend at. In tincidunt purus tellus. Praesent commodo, nibh et tristique facilisis, augue justo posuere lectus, nec varius dui nisi nec orci. Integer ut ullamcorper lacus. Nulla sit amet nunc mi, non varius lectus.</p>
-				</div>
-			</div>
-		</div>
-		<div class="grid_4">
-			<div class="box">
-				<h2>Lorem Ipsum</h2>
-				<div class="block">
-					<p>Sed orci enim, porttitor laoreet rhoncus ultricies, congue vel massa. In odio nibh, suscipit eu rhoncus eget, tempus sit amet leo. Sed porttitor est vitae ipsum tempor lobortis. Mauris nec nisl non tortor lacinia fringilla. Nunc tempor nibh nec enim iaculis sollicitudin. Quisque dictum porta lacus, ac suscipit nulla eleifend at. In tincidunt purus tellus. Praesent commodo, nibh et tristique facilisis, augue justo posuere lectus, nec varius dui nisi nec orci. Integer ut ullamcorper lacus. Nulla sit amet nunc mi, non varius lectus.</p>
-				</div>
-			</div>
-		</div>
-		<div class="grid_4">
-			<div class="box">
-				<h2>Lorem Ipsum</h2>
-				<div class="block">
-					<p>Sed orci enim, porttitor laoreet rhoncus ultricies, congue vel massa. In odio nibh, suscipit eu rhoncus eget, tempus sit amet leo. Sed porttitor est vitae ipsum tempor lobortis. Mauris nec nisl non tortor lacinia fringilla. Nunc tempor nibh nec enim iaculis sollicitudin. Quisque dictum porta lacus, ac suscipit nulla eleifend at. In tincidunt purus tellus. Praesent commodo, nibh et tristique facilisis, augue justo posuere lectus, nec varius dui nisi nec orci. Integer ut ullamcorper lacus. Nulla sit amet nunc mi, non varius lectus.</p>
-				</div>
-			</div>
-		</div>
-		<div class="clear"></div>
-			
+		<div class="clear" style="height: 40px; width: 100%;"></div>
+		
+		<div class="clear"></div>	
 			
 		<div class="grid_3">
+			<div class="box">
+				<h2><a href="#" id="toggle-list-items" style="cursor: pointer; ">Carrinho</a></h2>
+				<div style="margin: 0px; position: static; overflow: hidden; "><div class="block" id="list-items" style="margin: 0px; ">
+					<h5>Total</h5>
+					
+						
+				</div></div>
+			</div>
+			
+		
 			<div class="box menu">
-				<h2><a href="#" id="toggle-section-menu" style="cursor: pointer; ">Section Menu</a></h2>
+				<h2><a href="#" id="toggle-section-menu" style="cursor: pointer; ">Categorias</a></h2>
 				<div style="margin: 0px; position: static; overflow: hidden; "><div class="block" id="section-menu" style="margin: 0px; ">
 					<ul class="section menu">
 						<li>
-							<a class="menuitem current">Menu 1</a>
-							<ul class="submenu current" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; height: 125px; ">
-								<li><a>Submenu 1</a></li>
-								<li><a>Submenu 2</a></li>
-								<li><a class="active">Submenu 3</a></li>
-								<li><a>Submenu 4</a></li>
-								<li><a>Submenu 5</a></li>
+							<a class="menuitem current">Informática</a>
+							<ul class="submenu current" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; height: 300px; ">
+								<li><a>Assesórios</a></li>
+								<li><a>Drives e Gravadores</a></li>
+								<li><a>Fontes e Baterias</a></li>
+								<li><a>Notebook</a></li>
+								<li><a>Softwares</a></li>	
+								<li><a>Softwares</a></li>	
+								<li><a>Softwares</a></li>	
+								<li><a>Softwares</a></li>								
 							</ul>
 						</li>
 						<li>
-							<a class="menuitem">Menu 2</a>
+							<a class="menuitem">Eletrodomésticos</a>
 							<ul class="submenu" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; height: 0px; ">
-								<li><a>Submenu 1</a></li>
-								<li><a>Submenu 2</a></li>
-								<li><a>Submenu 3</a></li>
-								<li><a>Submenu 4</a></li>
-								<li><a>Submenu 5</a></li>
+								<li><a>Ar Condicionado</a></li>
+								<li><a>Geladeira</a></li>
+								<li><a>Fogão</a></li>
+								<li><a>Lavadoura de Roupa</a></li>
+								<li><a>Secadora de Roupa</a></li>
 							</ul>
 						</li>
 						<li>
-							<a class="menuitem">Menu 3</a>
+							<a class="menuitem">Esporte & Lazer</a>
 							<ul class="submenu" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; height: 0px; ">
-								<li><a>Submenu 1</a></li>
-								<li><a>Submenu 2</a></li>
-								<li><a>Submenu 3</a></li>
-								<li><a>Submenu 4</a></li>
-								<li><a>Submenu 5</a></li>
+								<li><a>Esportes</a></li>
+								<li><a>Fitness e Musculação</a></li>
+								<li><a>Games</a></li>
+								<li><a>Jogos de Mesa e Salão</a></li>
+								<li><a>Praia e Piscina</a></li>
 							</ul>
 						</li>
 						<li>
-							<a class="menuitem">Menu 4</a>
+							<a class="menuitem">Livros</a>
 							<ul class="submenu" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; height: 0px; ">
-								<li><a>Submenu 1</a></li>
-								<li><a>Submenu 2</a></li>
-								<li><a>Submenu 3</a></li>
-								<li><a>Submenu 4</a></li>
-								<li><a>Submenu 5</a></li>
+								<li><a>Auto-Ajuda</a></li>
+								<li><a>Didático</a></li>
+								<li><a>Infanto-juvenil</a></li>
+								<li><a>Infantil</a></li>
+								<li><a>Literatura</a></li>
 							</ul>
 						</li>
 					</ul>
 				</div></div>
 			</div>
-			<div class="box">
-				<h2><a href="#" id="toggle-list-items" style="cursor: pointer; ">List Items</a></h2>
-				<div style="margin: 0px; position: static; overflow: hidden; "><div class="block" id="list-items" style="margin: 0px; ">
-					<h5>A menu</h5>
-					<ul class="menu">
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 2</a></li>
-						<li><a href="#">Item 3</a></li>
-					</ul>
-				</div></div>
-			</div>
+			
 		</div>
 		<div class="grid_13">
 			<?php echo $this->Session->flash(); ?>
-
-			<?php echo $content_for_layout; ?>
+			<div id="content">
+				<?php echo $content_for_layout; ?>
+			</div>
 		</div>
+		
+		<div class="grid_16" style='background:url(http://localhost/cake/img/footer.png); height:120px; margin:3; text-align:right;'>
+			
+		</div>
+		
 		<div class="clear"></div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
