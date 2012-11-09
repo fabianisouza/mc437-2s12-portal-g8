@@ -50,4 +50,19 @@ class Product extends Model {
 		}
 		return $quantity;	
 	}
+	
+	public static function updateQuantity($code = null, $quantity = 0){		
+		if($code != null && $quantity != 0){
+			$HttpSocket = new HttpSocket();
+			$uri = 'http://g8:g8@mc437-g8-estoque-v2.webbyapp.com/products/quantity';
+			$array = array('code' => $code, 'quantity' => $quantity);
+			$data = json_encode($array);
+			$result = $HttpSocket->put($uri, $array);
+			$response = json_decode($result,true);
+			if($response['status']==0){
+				$quantity = $response['product']['quantity'];
+			}
+		}
+		return $quantity;
+	}
 }

@@ -9,7 +9,6 @@ class ProductsController extends AppController {
     public function view() {
     	$code = $this->params['code'];
     	$this->set('code', $code ); 
-    	//$this->set('product', $this->Product->getProduct($code) );
     	$this->set('price', $this->Product->getProductPrice($code) );
     	$this->set('quantity', $this->Product->getProductQuantity($code) );
     }
