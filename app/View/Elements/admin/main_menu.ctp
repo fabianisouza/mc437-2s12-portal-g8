@@ -1,14 +1,14 @@
 <ul class="nav main">
 	<li>
 		<a href="/admin">Admin</a>
-		<ul>
+		<!--<ul>
 			<li>
 				<a href="/">Link 1</a>
 			</li>
 			<li>
 				<a href="/">Link 2</a>
 			</li>
-		</ul>	
+		</ul>-->	
 	</li>
 	<li>
 		<a href="/admin">Admin</a>		
