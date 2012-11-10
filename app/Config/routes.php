@@ -31,6 +31,7 @@
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 	Router::connect('/products/:code', array('controller' => 'products', 'action' => 'view'), array('code' => '[0-9]+'));
+	Router::connect('/products/listCategories', array('controller' => 'products', 'action' => 'listCategories'));
 	Router::connect('/clients/exists/:cpf', array('controller' => 'clients', 'action' => 'exists'), array('cpf' => '[0-9]+'));
 	Router::connect('/clients/cep/:cpf', array('controller' => 'clients', 'action' => 'cep'), array('cpf' => '[0-9]+'));
 

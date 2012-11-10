@@ -3,7 +3,8 @@ class SoapsController extends AppController {
 
 
 	function index() {
-		$this->set('soap', $this->Soap->getEndereco());		
+		$result = $this->Soap->getProducts();
+		$this->set('soap', $result);		
 	}
 }
 ?>

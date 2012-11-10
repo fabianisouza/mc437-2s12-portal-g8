@@ -20,4 +20,8 @@ class ProductsController extends AppController {
 	public function edit($id = null) {
 	    
 	}
+	
+	public function listCategories(){
+		$this->set('categories', $this->Product->getAllCategories());
+	}
 }

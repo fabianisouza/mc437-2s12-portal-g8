@@ -43,49 +43,18 @@
 				<h2><a href="#" id="toggle-section-menu" style="cursor: pointer; ">Categorias</a></h2>
 				<div style="margin: 0px; position: static; overflow: hidden; "><div class="block" id="section-menu" style="margin: 0px; ">
 					<ul class="section menu">
-						<li>
-							<a class="menuitem current">Informática</a>
-							<ul class="submenu current" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; height: 300px; ">
-								<li><a>Assesórios</a></li>
-								<li><a>Drives e Gravadores</a></li>
-								<li><a>Fontes e Baterias</a></li>
-								<li><a>Notebook</a></li>
-								<li><a>Softwares</a></li>	
-								<li><a>Softwares</a></li>	
-								<li><a>Softwares</a></li>	
-								<li><a>Softwares</a></li>								
-							</ul>
-						</li>
-						<li>
-							<a class="menuitem">Eletrodomésticos</a>
-							<ul class="submenu" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; height: 0px; ">
-								<li><a>Ar Condicionado</a></li>
-								<li><a>Geladeira</a></li>
-								<li><a>Fogão</a></li>
-								<li><a>Lavadoura de Roupa</a></li>
-								<li><a>Secadora de Roupa</a></li>
-							</ul>
-						</li>
-						<li>
-							<a class="menuitem">Esporte & Lazer</a>
-							<ul class="submenu" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; height: 0px; ">
-								<li><a>Esportes</a></li>
-								<li><a>Fitness e Musculação</a></li>
-								<li><a>Games</a></li>
-								<li><a>Jogos de Mesa e Salão</a></li>
-								<li><a>Praia e Piscina</a></li>
-							</ul>
-						</li>
-						<li>
-							<a class="menuitem">Livros</a>
-							<ul class="submenu" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; height: 0px; ">
-								<li><a>Auto-Ajuda</a></li>
-								<li><a>Didático</a></li>
-								<li><a>Infanto-juvenil</a></li>
-								<li><a>Infantil</a></li>
-								<li><a>Literatura</a></li>
-							</ul>
-						</li>
+						<? $cur = 0; foreach($categoryList as $c){ ?>
+							<li>
+								<a class="menuitem <? if($cur == 0){ echo 'current'; $cur =1; } ?>"><? echo $c["category"]; ?></a>
+								<? if(count($c["children"]) > 0) { ?>									
+								<ul class="submenu <? if($cur == 0){ echo 'current'; $cur =1; } ?>" style="padding-top: 0px; border-top-style: none; padding-bottom: 0px; border-bottom-style: none; overflow: hidden; height: <? echo count($c["children"])*25 ?>px; ">
+									<? foreach($c["children"] as $cc) { ?>
+									<li><a><? echo $cc; ?></a></li>
+									<? } ?>						
+								</ul>									
+								<? } ?>
+							</li>
+						<?}?>
 					</ul>
 				</div></div>
 			</div>

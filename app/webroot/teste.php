@@ -1,15 +1,5 @@
 <?php
-
-class Soap extends AppModel {
-
-	public static function getProducts(){
-		
-        $client = new SoapClient("http://localhost:8080/ProdUNICAMPServices/services/Servicos?wsdl");
-        // se for mais de um parametro, $params será um array
-		$result = $client->getListCategoria();
-		return $result;
-	} 
-	
+ 
 	function objectToArray($d) {
 		if (is_object($d)) {
 			// Gets the properties of the given object
@@ -30,6 +20,13 @@ class Soap extends AppModel {
 			return $d;
 		}
 	}
-}
-
+		
+	$client = new SoapClient("http://localhost:8080/ProdUNICAMPServices/services/Servicos?wsdl");
+	$result = $client->getListCategoria();
+	print_r($result);
+	echo "<br>";
+	foreach ($result->return as $a){
+		echo $a->nome;
+		echo "<br />";
+	}
 ?>

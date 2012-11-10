@@ -4,6 +4,18 @@ App::uses('HttpSocket', 'Network/Http');
 
 class Product extends Model {
 	
+	public static function getAllCategories(){		
+		$client = new SoapClient("http://localhost:8080/ProdUNICAMPServices/services/Servicos?wsdl");
+		$result = $client->getListCategoria();
+		$ret = array();
+		foreach ($result->return as $a){
+			if ($a->supercategoria == ""){
+				array_push($ret, $a->nome);
+			}			
+		}
+		return $ret;
+	}
+	
 	public static function getAllProducts() {
 		$response = null;
 		$HttpSocket = new HttpSocket();
